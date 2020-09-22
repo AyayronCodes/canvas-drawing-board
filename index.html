@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drawing Board</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><h1>Canvas</h1></a>
+    </nav>
+    <h2>Welcome to <b>Canvas</b></h2>
+    <p>Draw out and save your imagination!</p>
+    <canvas width="900" height="600" class="canvas" id="jsCanvas"></canvas>
+    <div class="palette">
+      <form class="controls">
+        <label for="red" class="controlsLabel">Red</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          name="red"
+          id="jsRed"
+          class="colorRange"
+          style="background-color: lightcoral"
+        />
+        <label for="blue" class="controlsLabel">Blue</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          name="blue"
+          id="jsBlue"
+          class="colorRange"
+          style="background-color: lightsteelblue"
+        />
+        <label for="green" class="controlsLabel">Green</label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          step="1"
+          name="green"
+          id="jsGreen"
+          class="colorRange"
+          style="background-color: lightgreen"
+        />
+      </form>
+      <div class="choice">
+        <span>Your RGB Combo</span>
+        <div class="color"></div>
+      </div>
+    </div>
+    <button class="saveBtn">Save Drawing</button>
+    <footer>All Rights Reserved to No 1</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
